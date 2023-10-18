@@ -46,7 +46,7 @@ else
         @foreach (var cliente in iclientes)
         {
             <tr>
-            <td></td>
+            <td><button type="button" @onclick="(() => enviarParametros(cliente.Id_Cliente,cliente.Nombres,cliente.Apellidos,cliente.Direccion,cliente.Telefono,cliente.Fecha_Nacimiento))" class="btn btn-info"><i class="oi oi-pencil"></i></button></td>
             <td>@cliente.Nombres</td>
             <td>@cliente.Apellidos</td>
             <td>@cliente.Direccion</td>
@@ -63,7 +63,7 @@ private Int32 var_idcliente;
 
 private string? var_nombres, var_apellidos, var_direccion, var_telefono;
 
-private DateTime? var_fn;
+private DateTime var_fn;
 
 //Enviar parametros a variables locales 
 

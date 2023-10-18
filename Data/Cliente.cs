@@ -4,7 +4,7 @@ using System.Text.Json.Serialization;
 public class Cliente
     {
         [JsonPropertyName("idcliente")]
-        public Int32? Id_Cliente { get; set; }
+        public Int32 Id_Cliente { get; set; }
 
         [JsonPropertyName("nombres")]
         public string? Nombres { get; set; }
@@ -19,5 +19,5 @@ public class Cliente
         public string? Telefono { get; set; }      
 
         [JsonPropertyName("fecha_nacimiento")]
-        public DateTime? Fecha_Nacimiento { get; set; }                        
+        public DateTime Fecha_Nacimiento { get; set; }                        
     }
